@@ -1,0 +1,21 @@
+{
+	"name": "appFinder",
+	"version" : "0.0.1",
+	"private": "true",
+	"main": "appFinder.js",
+	"dependencies" : {
+		"express" 				: "*",
+		"mongoose" 				: "*",
+		"serve-favicon"			: "*",
+	    "morgan"	 			: "*",
+		"body-parser"			: "*",
+		"cookie-parser"			: "*",
+		"method-override"		: "*",
+		"express-session"		: "*"
+	},
+	"description" : "Package for main project",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/username/repository.git"
+	}
+}

@@ -1,0 +1,61 @@
+<div class="items">
+<img src="public/img/itemu.png">
+</div>
+
+<div>
+	<div>
+		<span>Item Name:</span>
+		<span><input ng-model="itemName"></span>
+	</div>
+	<div>
+		<span>Item Price:</span>
+		<span><input ng-model="itemPrice"></span>
+	</div>
+	<div>
+		<span>Item Function:</span>
+		<span><input ng-model="itemFunction"></span>
+	</div>
+	<div>
+		<span>Item Duration:</span>
+		<span><input ng-model="itemDuration"></span>
+	</div>
+	<div>
+		<span>Item Manacost:</span>
+		<span><input ng-model="itemManacost"></span>
+	</div>
+	<div>
+		<span>Item Recharge:</span>
+		<span><input ng-model="itemRecharge"></span>
+	</div>
+	<div>
+		<span>Item Description:</span>
+		<span><input ng-model="itemDescription"></span>
+</div>
+	
+	
+
+	<div ng-click="saveItem()">Save</div>
+
+<table>
+    <thead>
+        <td>Имя</td>
+        <td>Цена</td>
+        <td>Функции</td>
+		<td>Длительность</td>       
+	    <td>Расход маны: </td>
+		<td>Перезарядка: </td>
+		<td>Описание: </td>
+	 </thead>
+        
+    <tbody>
+        <tr ng-repeat="item in Items">
+            <td>{{item.itemName}}</td>
+            <td>{{item.itemPrice}}</td>    
+            <td>{{item.itemFunction}}</td>
+            <td>{{item.itemDuration}}</td>
+            <td>{{item.itemManacost}}</td>
+            <td>{{item.itemRecharge}}</td>
+            <td>{{item.itemDescription}}</td>        
+        </tr>
+    </tbody>
+</table>

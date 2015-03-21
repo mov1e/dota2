@@ -1,0 +1,200 @@
+body{
+	padding-top: 50px;
+}
+
+.topbar{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: 9999;
+	background-color: black; 
+}
+
+.topbaritems{
+	padding: 20px;
+	font-size: 25px;
+	font-weight: bolder;
+	color: yellow;
+	cursor: pointer;
+}
+
+.titlle{
+	color: silver;
+} 
+
+.bod{
+	background: black;
+	color: grey;
+	font-size: 18px;
+} 
+
+.headerStyle{
+	text-align: center;
+	font-size: 50px;
+	color: white;
+
+}
+
+.myText{
+	font-size: 25px;
+	color: purple;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+.fot{
+	text-align: center;
+}
+
+.igrproc{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.novovylych{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.razrab{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.otz{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.ciber{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.obigre{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.pods{
+	color: red;
+	font-size: 25px;
+	text-align: center;
+}
+
+.taktika{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.soder{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.farm{
+	color: green;
+	font-size: 18px;
+}
+
+.tp{
+	color: green;
+	font-size: 18px;
+}
+
+.ryna{
+	color: green;
+	font-size: 18px;
+}
+
+.gang{
+	color: green;
+	font-size: 18px;
+}
+
+.artef{
+	color: green;
+	font-size: 18px;
+}
+
+.intuicia{
+	color: green;
+	font-size: 18px;
+}
+
+.heroes{
+	color: red;
+	font-size: 25px;
+	text-align: center;
+}
+
+.tup{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.fotka{
+	text-align: center;
+}
+
+.streig{
+	color: green;
+	font-size: 18px;
+}
+
+.agil{
+	color: green;
+	font-size: 18px;
+}
+
+.int{
+	color: green;
+	font-size: 18px;
+}
+
+.chak{
+	text-align: center;
+	padding: 15px;
+}
+
+.army{
+	text-align: center;
+	padding: 50px;
+}
+
+.vremya{
+	text-align: center;
+	padding: 50px;
+}
+
+.gaidu{
+	color: red;
+	font-size: 25px;
+	text-align: center;
+}
+
+.newsher{
+	color: blue;
+	font-size: 20px;
+	text-align: center;
+}
+
+.winterwyvern{
+	text-align: center;
+}
+
+.items{
+	text-align: center;
+}
