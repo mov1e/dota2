@@ -14,6 +14,7 @@ results
 npm-debug.log
 node_modules
 
+
 config/secretDatabase.js
 config/secretAuth.js
 cmd.exe
@@ -24,7 +25,11 @@ commit
 pa
 pull
 push
+<<<<<<< HEAD
 
 головна
 фото
 інфо
+=======
+server/files
+>>>>>>> fdb1f666265edc6897b8ceb61a83c43f071f48c5
