@@ -20,7 +20,6 @@ dotaController.heroes = function($scope,$http){
 	}
 	$http.get('/api/getHeroes')
 	.success(function(data){
-		console.log(data);
 		$scope.Heroes=data;
 	});
 }
@@ -42,7 +41,6 @@ dotaController.items = function($scope,$http){
 	}
 	$http.get('/api/getItems')
 	.success(function(data){
-		console.log(data);
 		$scope.Items=data;
 	});
 }
@@ -51,14 +49,12 @@ dotaController.items = function($scope,$http){
 dotaController.guides = function($scope,$http){
 	$http.get('/api/getHeroes')
 	.success(function(data){
-		console.log(data);
-		$scope.Heroes=data;
+		if(data) $scope.Heroes=data;
 	});
 
 	$http.get('/api/getItems')
 	.success(function(data){
-		console.log(data);
-		$scope.Items=data;
+		if(data) $scope.Items=data;
 	});
 }
 dotaController.news = function($scope){

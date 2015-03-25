@@ -1,15 +1,19 @@
-        
-    
-    <select ng-model='myHero' ng-options="hero.heroName for hero in Heroes">
-              
-    </select>
-    
-        
-   
-    <select ng-model='myItem' ng-options="item.itemName for item in Items">
-             
-    </select>
-  
+    <div ng-repeat="hero in Heroes">{{hero.heroName}}</div>
+    <div ng-repeat="item in Items">{{item.itemName}}</div>
+
+    <span ng-init="menu='createguide'" ng-click="menu='allguide'">all guide</span>
+    <span ng-click="menu='guideview'">guide view</span>
+    <span ng-click="menu='createguide'">create guide</span>
+  	<div ng-show="menu=='allguide'">
+         <span ng-click="menu='createguide'">create guide</span>
+    </div>
+  	<div ng-show="menu=='guideview'">menu2</div>
+  	<div ng-show="menu=='createguide'">
+  		<select ng-model='myHero' ng-options="hero.heroName for hero in Heroes">
+    	</select>
+    	<select ng-model='myItem' ng-options="item.itemName for item in Items">
+    	</select>
+    </div>
 
 
 
