@@ -1,11 +1,11 @@
 {
-	"name": "appFinder",
+	"name": "dota2",
 	"version" : "0.0.1",
 	"private": "true",
-	"main": "appFinder.js",
+	"main": "dota2.js",
 	"dependencies" : {
 		"express" 				: "*",
-		"mongoose" 				: "*",
+		"mongoose" 				: "3.8.8",
 		"serve-favicon"			: "*",
 	    "morgan"	 			: "*",
 		"body-parser"			: "*",

@@ -1,23 +1,65 @@
-    <div ng-repeat="hero in Heroes">{{hero.heroName}}</div>
-    <div ng-repeat="item in Items">{{item.itemName}}</div>
 
-    <span ng-init="menu='createguide'" ng-click="menu='allguide'">all guide</span>
-    <span ng-click="menu='guideview'">guide view</span>
-    <span ng-click="menu='createguide'">create guide</span>
-  	<div ng-show="menu=='allguide'">
-         <span ng-click="menu='createguide'">create guide</span>
-    </div>
-  	<div ng-show="menu=='guideview'">menu2</div>
-  	<div ng-show="menu=='createguide'">
-  		<select ng-model='myHero' ng-options="hero.heroName for hero in Heroes">
-    	</select>
-    	<select ng-model='myItem' ng-options="item.itemName for item in Items">
-    	</select>
-    </div>
+<div ng-repeat="item in Items">{{item.itemName}}</div>
+
+<span ng-click="setMenu('allguide')">all guide</span>
+
+<span ng-click="setMenu('selectHero')">create guide</span>
 
 
 
 
-  
 
-  
+<div ng-show="menu=='allguide'">
+
+	<div>Guide 1
+		<span ng-click="setMenu('guideview')">guide view</span>
+	</div>
+	<div>Guide 2
+		<span ng-click="setMenu('guideview')">guide view</span>
+	</div>
+	<div>Guide 3
+		<span ng-click="setMenu('guideview')">guide view</span>
+	</div>
+
+</div>
+
+
+
+<div ng-show="menu=='guideview'">
+	<span>Guide View Page</span>
+</div>
+
+<div ng-show="menu=='selectHero'">
+	<span>Select Hero Page</span>
+	<div ng-repeat="hero in Heroes">
+		<span class="heroNameStyle">{{hero.heroName}}</span>
+		<button ng-click="setMenu('createguide');setHero(hero);">select hero</button>
+	</div>
+</div>
+
+<div ng-show="menu=='createguide'">
+	<span>Create Guide for hero: {{selectedHero.heroName}} Page</span>
+	<div ng-repeat="col in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]">
+		<div ng-click="setSkillCol(col,1)">Skill Q</div>
+		<div ng-click="setSkillCol(col,2)">Skill W</div>
+		<div ng-click="setSkillCol(col,3)">Skill E</div>
+		<div ng-click="setSkillCol(col,4)">Skill R</div>
+		<div ng-click="setSkillCol(col,5)">Skill +</div>
+	</div>
+
+	<div>
+		<span>Week Against</span>
+		multiple select
+	</div>
+	
+	<div>
+		<span>Strong Against</span>
+		multiple select
+	</div>
+
+	<div>
+		<span>Jungle Items</span>
+		multiple select
+	</div>
+
+</div>

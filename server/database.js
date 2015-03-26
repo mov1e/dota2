@@ -18,3 +18,17 @@ module.exports.Item = mongoose.model('Item', {
 	itemRecharge: String,
 	itemDescription: String
 });
+/*
+	for skills.selected:
+	1 > skill Q
+	2 > skill W
+	3 > skill E
+	4 > skill R
+	5 > skill +
+*/
+module.exports.Guide = mongoose.model('Guide', {
+	skills: [{
+		order: Number,
+		selected: Number
+	}]
+});

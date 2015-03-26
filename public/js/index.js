@@ -56,6 +56,26 @@ dotaController.guides = function($scope,$http){
 	.success(function(data){
 		if(data) $scope.Items=data;
 	});
+
+	$scope.menu="selectHero";
+	$scope.setMenu=function(menu){
+		$scope.menu=menu;
+	}
+	$scope.setHero=function(hero){
+		$scope.selectedHero=hero;
+		$scope.Guide={
+			skills:[]
+		};
+	}
+	$scope.setSkillCol=function(col,skill){
+		for (var i = 0; i < $scope.Guide.skills.length; i++) {
+			if($scope.Guide.skills[i].order==col){
+				$scope.Guide.skills.splice(i,1);
+				break;
+			}
+		};
+		$scope.Guide.skills.push({order: col,selected: skill});
+	}
 }
 dotaController.news = function($scope){
 }
