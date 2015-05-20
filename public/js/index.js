@@ -86,7 +86,7 @@ dotaController.meme = function($scope){
 
 
 
-angular.module('dota',['ui.router'])
+angular.module('dota',['ui.router','ngMaterial','ngImgCrop','angularFileUpload'])
 
 .controller(dotaController)
 
